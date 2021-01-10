@@ -1,0 +1,24 @@
+Task 2:
+Describe briefly, how you would piece together a solution for the problem
+statement given below :
+Assume the use case given to you is video tagging. The videos given to you could be
+from any of the social media sharing apps or platforms such as Youtube, Instagram
+etc. Your goal is to come up with a method of tag-automation, using Machine
+Learning techniques.
+What would be your approach in terms of developing an ML solution, to
+automatically tag these input videos based on the content appearing in the video?
+Remember that the videos could be about any subject matter. These tags are
+expected to be used by recommendation systems that will recommend users
+similar content to the ones they consume.
+
+________________________________________________________________________________________________
+ANSWER:-
+Using transfer learning models(VGG16,EfficientNet,MobileNet) as a bse model for feature extraction would be a great start for object detection,with some fine tuning in it will works as
+the state of the art model.
+1.The question about feasibilty is that recommendation system constantly needs
+-----1. Initial Data to start tagging the appropriate objects and users respose to this.(expensive)
+-----2. To keep it running we need constant response from the user and that will also work as a data feature to our model.(less expensive in collecting,more expensive in tweaking model)
+2. Approach is quite simple use initial data for small scale and register the inputs with the time the amount of data will increase and the accuracy is better with alot of data.
+3. Main challenge is to 
+------1.Come with the initial data since recommendation systems data according to specific need is quite a challenging task to get.
+------2. Constantly updating the model acoording to the users response.
